@@ -25,13 +25,13 @@ class MyTheme {
           fontSize: 16.sp,
         ),
         bodySmall: TextStyle(
-          color: Color(0x9906004E),
+          color: const Color(0x9906004E),
           fontSize: 14.sp,
           fontFamily: 'Poppins',
           fontWeight: FontWeight.w300,
         ),
-          displaySmall: TextStyle(fontSize: 12),
-        displayLarge: TextStyle(fontSize: 14),
+          displaySmall: const TextStyle(fontSize: 12),
+        displayLarge: const TextStyle(fontSize: 14),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: primary,

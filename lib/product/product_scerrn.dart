@@ -112,7 +112,7 @@ class _ProductScreenState extends State<ProductScreen> {
         ),
         GridView.builder(
           shrinkWrap: true,
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             childAspectRatio: (192 / 250),
             crossAxisCount: 2,
@@ -224,7 +224,7 @@ class _ProductScreenState extends State<ProductScreen> {
                   ),
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               Padding(
                 padding: EdgeInsets.only(
                   left: 8.w,
@@ -250,7 +250,7 @@ class _ProductScreenState extends State<ProductScreen> {
                             Icons.star,
                             color: MyTheme.yellowColor,
                           ),
-                          Spacer(),
+                          const Spacer(),
                           InkWell(
                             child: Container(
                               padding: EdgeInsets.all(5.w.h),

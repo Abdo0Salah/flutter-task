@@ -18,7 +18,7 @@ class UserRepository {
             parsedList.map((json) => Products.fromJson(json)).toList();
         return Right(productsList);
       } else {
-        return Left('Unexpected response type');
+        return const Left('Unexpected response type');
       }
     } on ServerException catch (e) {
       return Left(e.errModel.errorMessage);
