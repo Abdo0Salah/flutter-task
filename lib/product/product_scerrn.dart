@@ -214,8 +214,10 @@ class _ProductScreenState extends State<ProductScreen> {
                             style: Theme.of(context).textTheme.displayLarge,
                           ),
                           Spacer(),
-                           Text("EGP 12",
-                            style: Theme.of(context).textTheme.displayLarge,
+                           Text("EGP ${product.price?.toString() ?? ""}",
+                            style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                              decoration: TextDecoration.lineThrough,
+                            ),
                           ),
                         ],
                       ),
